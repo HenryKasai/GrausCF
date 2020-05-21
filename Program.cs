@@ -11,10 +11,8 @@ namespace GrausCF
             Console.ForegroundColor = ConsoleColor.Blue;
             string celsius = Console.ReadLine();
 
-            int celsius1 = Convert.ToInt32(celsius);
-            string um = "1,8";
-            decimal um1 = Convert.ToDecimal(um);
-            decimal result = celsius1 * um1 + 32;
+            double celsius1 = Convert.ToDouble(celsius);
+            double result = celsius1 * 1.8 + 32;
 
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("Sua temperatura em fahrenheit é " + result + "°F." );
